@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Job & Career Assistant</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="chat-container">
+
+        <!-- Header -->
+        <div class="header">
+
+            <h2>💼 Job & Career Assistant</h2>
+
+            <p>Your Personal Career Guide</p>
+
+        </div>
+
+
+        <!-- Chat Messages -->
+        <div id="chat-box" class="chat-box">
+
+            <div class="message bot">
+
+                <b>Job & Career Assistant 🤖</b>
+
+                <p>
+                    Hi! 👋 Welcome to Job & Career Assistant.
+                </p>
+
+                <p>
+                    I can help you with:
+                </p>
+
+                <ul>
+                    <li>📄 Resume & CV</li>
+                    <li>💼 Job Search</li>
+                    <li>🎯 Career Guidance</li>
+                    <li>🎤 Interview Preparation</li>
+                    <li>🛠️ Skills</li>
+                    <li>🎓 Internships</li>
+                </ul>
+
+                <p>
+                    Ask me anything about your career!
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Input Area -->
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="user-input"
+                placeholder="Ask your career question..."
+                autocomplete="off"
+            >
+
+            <button onclick="sendMessage()">
+                Send
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
+
